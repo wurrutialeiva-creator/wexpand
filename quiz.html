@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Master - Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="quiz">
+    <div class="container">
+        <h2 id="quizTitle">Cuestionario</h2>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="quizProgress"></div>
+        </div>
+        <p id="questionCount" class="stat-label">Pregunta 1 de 50</p>
+        <br>
+
+        <div id="questionContainer">
+            <!-- Question content injected here -->
+        </div>
+
+        <div id="feedback" class="feedback hidden">
+            <div id="feedbackText" class="feedback-text"></div>
+        </div>
+
+        <button id="nextBtn" class="btn hidden" onclick="nextQuestion()" style="margin-top: 20px;">Siguiente Pregunta ➡️</button>
+        <br>
+        <button class="btn btn-secondary" onclick="window.location.href='dashboard.html'" style="margin-top: 10px;">Volver al Panel</button>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
